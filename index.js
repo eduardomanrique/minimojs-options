@@ -80,30 +80,11 @@ const firstOption = (array) => nullableOption(_first(array));
 const isOption = (o) => o instanceof Option;
 const getValue = (o) => isOption(o) ? o.value : o;
 
-const toPromise = (p1, p2) => new Promise((resolve, reject) => {
-    if (typeof p1 == "function") {
-        const fn = p1;
-        const parameters = p2 instanceof Array ? p2 : [p2];
-        parameters.push((err, result) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(result);
-            }
-        });
-        fn(...parameters);
-    } else {
-        resolve(p1);
-    }
-});
-
-
 module.exports = {
     optionOf: optionOf,
     nullableOption: nullableOption,
     emptyOption: emptyOption,
     firstOption: firstOption,
-    toPromise: toPromise,
     outdent: outdent,
     isOption: isOption,
     getValue: getValue
