@@ -1,0 +1,27 @@
+{
+  "name": "minimojs-options",
+  "version": "1.0.1",
+  "description": "Optional javascript library ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardomanrique/minimojs-options.git"
+  },
+  "keywords": [
+    "optional",
+    "functional"
+  ],
+  "author": "Eduardo Manrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardomanrique/minimojs-options/issues"
+  },
+  "homepage": "https://github.com/eduardomanrique/minimojs-options#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
