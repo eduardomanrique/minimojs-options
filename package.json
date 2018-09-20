@@ -1,6 +1,6 @@
 {
   "name": "minimojs-options",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Optional javascript library ",
   "main": "index.js",
   "scripts": {

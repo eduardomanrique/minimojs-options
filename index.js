@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 class Option {
     constructor(val) {
         this._val = val;
